@@ -16,7 +16,6 @@ def chromosomes_fn():
 
 
 # Função que implementa o GRASP
-
 def grasp_fn():
     start_time = time.time()
     grasp.main()
@@ -50,6 +49,9 @@ def performace():
     desvio_padrao_algoritmo1 = np.std(tempos_algoritmo1)
     desvio_padrao_algoritmo2 = np.std(tempos_algoritmo2)
     desvio_padrao_algoritmo3 = np.std(tempos_algoritmo3)
+
+    print('médias: ', media_algoritmo1, media_algoritmo2, media_algoritmo3)
+    print('desvios padrao: ', desvio_padrao_algoritmo1, desvio_padrao_algoritmo2, desvio_padrao_algoritmo3)
 
     # Gere o gráfico de barras comparando os tempos de execução, incluindo média e desvio padrão
     algoritmos = ['AG Cromossomos', 'GRASP', 'Dinâmico']
@@ -90,6 +92,9 @@ def results():
         desvio_padrao_algoritmo2 = np.std(resultados_algoritmo2, axis=0)
         desvio_padrao_algoritmo3 = np.std(resultados_algoritmo3, axis=0)
 
+    print('médias: ', media_algoritmo1, media_algoritmo2, media_algoritmo3)
+    print('desvios padrao: ', desvio_padrao_algoritmo1, desvio_padrao_algoritmo2, desvio_padrao_algoritmo3)
+
     posicoes = np.arange(num_arquivos)
     largura_barra = 0.25
     algoritmos = ['AG Cromossomos', 'GRASP', 'Dinâmico']
@@ -113,6 +118,6 @@ if __name__ == "__main__":
     # Número de vezes que cada algoritmo será executado
     num_execucoes = 15
     minha_thread = threading.Thread(target=performace)
-    minha_thread.start()  # Inicie a thread
+    minha_thread.start()  # Inicie a thread que compara performace
     # performace()  # Gera o gráfico de comparação de performace
     results()  # Gera o gráfico de comparação de resultados
