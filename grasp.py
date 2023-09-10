@@ -75,8 +75,8 @@ def main():
         input_file_path = f"input/input{iterator}.in"
         n, value, weight, capacity = solve_knapsack_problem(input_file_path)
         solution, max_value, max_weight = grasp_knapsack(value, weight, capacity, max_iterations, alpha)
-        output_max_values.append([max_weight, max_value])
-        output_line = f"Instancia {iterator} -> Peso: {max_weight}, Valor {max_value}\n"
+        output_max_values.append(max_value)
+        output_line = f"Instancia {iterator}: Valor {max_value}\n"
         print(f"\nA melhor solução Instancia {iterator}:")
         print("Peso:", max_weight)
         print("Valor:", max_value)

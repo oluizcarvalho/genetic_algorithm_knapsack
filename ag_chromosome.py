@@ -87,11 +87,11 @@ def algoritmo_genetico(populacao, geracoes, probabilidade_mutacao, itens, capaci
 def main():
     output_max_values = []
 
-    for iterator in range(2, 3):
+    for iterator in range(1, 5):
         input_file_path = f"input/input{iterator}.in"
         capacidade_mochila, itens, tamanho_populacao = ler_parametros(input_file_path)
         probabilidade_mutacao = 0.2
-        geracoes = 50
+        geracoes = 100
 
         print("Itens disponíveis:\n", itens)
         print("\nParâmetros do algoritmo genético:")
@@ -101,15 +101,15 @@ def main():
         print("Gerações:", geracoes, "\n")
         print("Realizando evolução genética:")
 
-        populacao = gerar_populacao(tamanho_populacao * 10, itens)
+        populacao = gerar_populacao(tamanho_populacao, itens)
         peso_total, valor_total = algoritmo_genetico(populacao, geracoes, probabilidade_mutacao, itens,
                                                      capacidade_mochila)
 
-        output_line = f"Instancia {iterator} -> Peso: {peso_total}, Valor {valor_total}\n"
+        output_line = f"Instancia {iterator}: Valor {valor_total}\n"
 
-        with open("output/dynamic.out", "a+") as output_file:
+        with open("output/chromosomes.out", "a+") as output_file:
             output_file.write(output_line)
-        output_max_values.append([peso_total, valor_total])
+        output_max_values.append(valor_total)
         print("\nA melhor solução:")
         print("Peso:", peso_total)
         print("Valor:", valor_total)
