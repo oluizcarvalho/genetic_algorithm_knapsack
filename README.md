@@ -58,4 +58,4 @@ serão registrados em arquivos na pasta `output`. Certifique-se de verificar ess
 
 ## Relatório
 
-O resultado de comparação entre os três algoritmos se encontra no arquivo de extensão ".pdf" chamado **report**.
+O resultado de comparação entre os três algoritmos se encontra no arquivo de extensão ".pdf" chamado **report**, localizado na pasta "reports".
