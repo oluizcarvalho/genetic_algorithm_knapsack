@@ -1,7 +1,10 @@
 # Projeto de Resolução do Problema da Mochila
 
-### Aluno: Luiz André da Silva Carvalho
+## Alunos
+- Luiz André da Silva Carvalho
+- João Victor Fernandes de Souza Silva
 
+## Sobre
 Este projeto implementa algoritmos para resolver o problema da mochila em quatro arquivos de entrada diferentes,
 localizados na pasta `input`. Os resultados são exibidos por meio de logs no terminal e também são gerados ou
 atualizados arquivos na pasta `output`.
@@ -52,3 +55,7 @@ que esses arquivos estejam formatados corretamente para a entrada do algoritmo.
 
 Os resultados da resolução do problema da mochila serão exibidos no terminal durante a execução do programa e também
 serão registrados em arquivos na pasta `output`. Certifique-se de verificar esses arquivos para os resultados finais.
+
+## Relatório
+
+O resultado de comparação entre os três algoritmos se encontra no arquivo de extensão ".pdf" chamado **report**.
