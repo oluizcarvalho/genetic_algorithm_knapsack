@@ -18,8 +18,8 @@ atualizados arquivos na pasta `output`.
 `/report.py` → Algoritmo que roda os outros algoritmos, gera gráficos com a média e desvio padrão dos resultados e tempo
 de execução
 
-P.s: O algoritmo de programação dinâmica e GRASP forem baseados
-desse [repositório](https://github.com/neemiasbsilva/knapsack-problem-using-dp-grasp-tabu).
+P.s: O algoritmo de programação dinâmica e GRASP foram baseados
+deste [repositório](https://github.com/neemiasbsilva/knapsack-problem-using-dp-grasp-tabu).
 
 ## Pré-requisitos
 
